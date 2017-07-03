@@ -247,8 +247,8 @@
 }
 
 - (void)configureArrow:(UILabel *)quarterBadge arrowStyle:(AKAQuarterBadgeArrowStyle)arrowStyle{
-    CGFloat x = quarterBadge.x;
-    CGFloat y = quarterBadge.y;
+//    CGFloat x = quarterBadge.x;
+//    CGFloat y = quarterBadge.y;
     CGFloat width = quarterBadge.width;
     CGFloat height = quarterBadge.height;
     CGFloat shortEdge = height * (1 - 0.618);
