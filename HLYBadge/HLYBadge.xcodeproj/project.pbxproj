@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4178B5F41F063125004734AB /* UIView+AKABadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178B5F31F063125004734AB /* UIView+AKABadge.m */; };
+		4180A1DD1F062C0F00130A09 /* HLYExampleMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */; };
+		4180A1E11F062C2100130A09 /* HLYRedDotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */; };
+		4180A1E51F062D0000130A09 /* UIView+HLYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1E41F062D0000130A09 /* UIView+HLYFrame.m */; };
+		41E5B1001F060B7300143681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B0FF1F060B7300143681 /* main.m */; };
+		41E5B1031F060B7300143681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B1021F060B7300143681 /* AppDelegate.m */; };
+		41E5B1061F060B7300143681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B1051F060B7300143681 /* ViewController.m */; };
+		41E5B1091F060B7300143681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E5B1071F060B7300143681 /* Main.storyboard */; };
+		41E5B10C1F060B7300143681 /* HLYBadge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B10A1F060B7300143681 /* HLYBadge.xcdatamodeld */; };
+		41E5B10E1F060B7300143681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E5B10D1F060B7300143681 /* Assets.xcassets */; };
+		41E5B1111F060B7300143681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E5B10F1F060B7300143681 /* LaunchScreen.storyboard */; };
+		41E5B11C1F060B7300143681 /* HLYBadgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B11B1F060B7300143681 /* HLYBadgeTests.m */; };
+		41E5B1271F060B7300143681 /* HLYBadgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B1261F060B7300143681 /* HLYBadgeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41E5B1181F060B7300143681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E5B0F31F060B7300143681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E5B0FA1F060B7300143681;
+			remoteInfo = HLYBadge;
+		};
+		41E5B1231F060B7300143681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E5B0F31F060B7300143681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E5B0FA1F060B7300143681;
+			remoteInfo = HLYBadge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4178B5F21F063125004734AB /* UIView+AKABadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKABadge.h"; sourceTree = "<group>"; };
+		4178B5F31F063125004734AB /* UIView+AKABadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKABadge.m"; sourceTree = "<group>"; };
+		4180A1DB1F062C0F00130A09 /* HLYExampleMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYExampleMgr.h; sourceTree = "<group>"; };
+		4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYExampleMgr.m; sourceTree = "<group>"; };
+		4180A1DF1F062C2100130A09 /* HLYRedDotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYRedDotViewController.h; sourceTree = "<group>"; };
+		4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYRedDotViewController.m; sourceTree = "<group>"; };
+		4180A1E31F062D0000130A09 /* UIView+HLYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HLYFrame.h"; sourceTree = "<group>"; };
+		4180A1E41F062D0000130A09 /* UIView+HLYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HLYFrame.m"; sourceTree = "<group>"; };
+		4180A1E71F062E1100130A09 /* AKABadgeImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKABadgeImport.h; sourceTree = "<group>"; };
+		4180A1EA1F062FB600130A09 /* AKABadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKABadgeProtocol.h; sourceTree = "<group>"; };
+		41E5B0FB1F060B7300143681 /* HLYBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLYBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E5B0FF1F060B7300143681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41E5B1011F060B7300143681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41E5B1021F060B7300143681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41E5B1041F060B7300143681 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		41E5B1051F060B7300143681 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41E5B1081F060B7300143681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41E5B10B1F060B7300143681 /* HLYBadge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HLYBadge.xcdatamodel; sourceTree = "<group>"; };
+		41E5B10D1F060B7300143681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E5B1101F060B7300143681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41E5B1121F060B7300143681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E5B1171F060B7300143681 /* HLYBadgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLYBadgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E5B11B1F060B7300143681 /* HLYBadgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYBadgeTests.m; sourceTree = "<group>"; };
+		41E5B11D1F060B7300143681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E5B1221F060B7300143681 /* HLYBadgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLYBadgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E5B1261F060B7300143681 /* HLYBadgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLYBadgeUITests.m; sourceTree = "<group>"; };
+		41E5B1281F060B7300143681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41E5B0F81F060B7300143681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E5B1141F060B7300143681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E5B11F1F060B7300143681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41700FAC1F061BBB0027E611 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1E21F062D0000130A09 /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		41700FB01F0622010027E611 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1DE1F062C2100130A09 /* VC */,
+				4180A1DA1F062C0F00130A09 /* Manager */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		4180A1DA1F062C0F00130A09 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1DB1F062C0F00130A09 /* HLYExampleMgr.h */,
+				4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4180A1DE1F062C2100130A09 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1DF1F062C2100130A09 /* HLYRedDotViewController.h */,
+				4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		4180A1E21F062D0000130A09 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1E31F062D0000130A09 /* UIView+HLYFrame.h */,
+				4180A1E41F062D0000130A09 /* UIView+HLYFrame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4180A1E61F062D6800130A09 /* AKABadge */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1E91F062E6C00130A09 /* Protocol */,
+				4180A1E81F062E5000130A09 /* UIView */,
+				4180A1E71F062E1100130A09 /* AKABadgeImport.h */,
+			);
+			path = AKABadge;
+			sourceTree = "<group>";
+		};
+		4180A1E81F062E5000130A09 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4178B5F21F063125004734AB /* UIView+AKABadge.h */,
+				4178B5F31F063125004734AB /* UIView+AKABadge.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		4180A1E91F062E6C00130A09 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4180A1EA1F062FB600130A09 /* AKABadgeProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		41E5B0F21F060B7300143681 = {
+			isa = PBXGroup;
+			children = (
+				41E5B0FD1F060B7300143681 /* HLYBadge */,
+				41E5B11A1F060B7300143681 /* HLYBadgeTests */,
+				41E5B1251F060B7300143681 /* HLYBadgeUITests */,
+				41E5B0FC1F060B7300143681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41E5B0FC1F060B7300143681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E5B0FB1F060B7300143681 /* HLYBadge.app */,
+				41E5B1171F060B7300143681 /* HLYBadgeTests.xctest */,
+				41E5B1221F060B7300143681 /* HLYBadgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41E5B0FD1F060B7300143681 /* HLYBadge */ = {
+			isa = PBXGroup;
+			children = (
+				41700FB01F0622010027E611 /* examples */,
+				41700FAC1F061BBB0027E611 /* Tools */,
+				4180A1E61F062D6800130A09 /* AKABadge */,
+				41E5B10D1F060B7300143681 /* Assets.xcassets */,
+				41E5B1011F060B7300143681 /* AppDelegate.h */,
+				41E5B1021F060B7300143681 /* AppDelegate.m */,
+				41E5B1041F060B7300143681 /* ViewController.h */,
+				41E5B1051F060B7300143681 /* ViewController.m */,
+				41E5B1071F060B7300143681 /* Main.storyboard */,
+				41E5B10F1F060B7300143681 /* LaunchScreen.storyboard */,
+				41E5B1121F060B7300143681 /* Info.plist */,
+				41E5B10A1F060B7300143681 /* HLYBadge.xcdatamodeld */,
+				41E5B0FE1F060B7300143681 /* Supporting Files */,
+			);
+			path = HLYBadge;
+			sourceTree = "<group>";
+		};
+		41E5B0FE1F060B7300143681 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41E5B0FF1F060B7300143681 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41E5B11A1F060B7300143681 /* HLYBadgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				41E5B11B1F060B7300143681 /* HLYBadgeTests.m */,
+				41E5B11D1F060B7300143681 /* Info.plist */,
+			);
+			path = HLYBadgeTests;
+			sourceTree = "<group>";
+		};
+		41E5B1251F060B7300143681 /* HLYBadgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41E5B1261F060B7300143681 /* HLYBadgeUITests.m */,
+				41E5B1281F060B7300143681 /* Info.plist */,
+			);
+			path = HLYBadgeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41E5B0FA1F060B7300143681 /* HLYBadge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E5B12B1F060B7300143681 /* Build configuration list for PBXNativeTarget "HLYBadge" */;
+			buildPhases = (
+				41E5B0F71F060B7300143681 /* Sources */,
+				41E5B0F81F060B7300143681 /* Frameworks */,
+				41E5B0F91F060B7300143681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLYBadge;
+			productName = HLYBadge;
+			productReference = 41E5B0FB1F060B7300143681 /* HLYBadge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41E5B1161F060B7300143681 /* HLYBadgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E5B12E1F060B7300143681 /* Build configuration list for PBXNativeTarget "HLYBadgeTests" */;
+			buildPhases = (
+				41E5B1131F060B7300143681 /* Sources */,
+				41E5B1141F060B7300143681 /* Frameworks */,
+				41E5B1151F060B7300143681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E5B1191F060B7300143681 /* PBXTargetDependency */,
+			);
+			name = HLYBadgeTests;
+			productName = HLYBadgeTests;
+			productReference = 41E5B1171F060B7300143681 /* HLYBadgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41E5B1211F060B7300143681 /* HLYBadgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E5B1311F060B7300143681 /* Build configuration list for PBXNativeTarget "HLYBadgeUITests" */;
+			buildPhases = (
+				41E5B11E1F060B7300143681 /* Sources */,
+				41E5B11F1F060B7300143681 /* Frameworks */,
+				41E5B1201F060B7300143681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E5B1241F060B7300143681 /* PBXTargetDependency */,
+			);
+			name = HLYBadgeUITests;
+			productName = HLYBadgeUITests;
+			productReference = 41E5B1221F060B7300143681 /* HLYBadgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E5B0F31F060B7300143681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Aka;
+				TargetAttributes = {
+					41E5B0FA1F060B7300143681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+					};
+					41E5B1161F060B7300143681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 41E5B0FA1F060B7300143681;
+					};
+					41E5B1211F060B7300143681 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2XBEJ6876;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 41E5B0FA1F060B7300143681;
+					};
+				};
+			};
+			buildConfigurationList = 41E5B0F61F060B7300143681 /* Build configuration list for PBXProject "HLYBadge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41E5B0F21F060B7300143681;
+			productRefGroup = 41E5B0FC1F060B7300143681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41E5B0FA1F060B7300143681 /* HLYBadge */,
+				41E5B1161F060B7300143681 /* HLYBadgeTests */,
+				41E5B1211F060B7300143681 /* HLYBadgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41E5B0F91F060B7300143681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E5B1111F060B7300143681 /* LaunchScreen.storyboard in Resources */,
+				41E5B10E1F060B7300143681 /* Assets.xcassets in Resources */,
+				41E5B1091F060B7300143681 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E5B1151F060B7300143681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E5B1201F060B7300143681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41E5B0F71F060B7300143681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4178B5F41F063125004734AB /* UIView+AKABadge.m in Sources */,
+				4180A1E51F062D0000130A09 /* UIView+HLYFrame.m in Sources */,
+				41E5B1061F060B7300143681 /* ViewController.m in Sources */,
+				4180A1DD1F062C0F00130A09 /* HLYExampleMgr.m in Sources */,
+				4180A1E11F062C2100130A09 /* HLYRedDotViewController.m in Sources */,
+				41E5B10C1F060B7300143681 /* HLYBadge.xcdatamodeld in Sources */,
+				41E5B1031F060B7300143681 /* AppDelegate.m in Sources */,
+				41E5B1001F060B7300143681 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E5B1131F060B7300143681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E5B11C1F060B7300143681 /* HLYBadgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E5B11E1F060B7300143681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E5B1271F060B7300143681 /* HLYBadgeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41E5B1191F060B7300143681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E5B0FA1F060B7300143681 /* HLYBadge */;
+			targetProxy = 41E5B1181F060B7300143681 /* PBXContainerItemProxy */;
+		};
+		41E5B1241F060B7300143681 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E5B0FA1F060B7300143681 /* HLYBadge */;
+			targetProxy = 41E5B1231F060B7300143681 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41E5B1071F060B7300143681 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E5B1081F060B7300143681 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41E5B10F1F060B7300143681 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E5B1101F060B7300143681 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41E5B1291F060B7300143681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41E5B12A1F060B7300143681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41E5B12C1F060B7300143681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = HLYBadge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.HLYBadge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		41E5B12D1F060B7300143681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = HLYBadge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.HLYBadge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		41E5B12F1F060B7300143681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = HLYBadgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.HLYBadgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLYBadge.app/HLYBadge";
+			};
+			name = Debug;
+		};
+		41E5B1301F060B7300143681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = HLYBadgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.HLYBadgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLYBadge.app/HLYBadge";
+			};
+			name = Release;
+		};
+		41E5B1321F060B7300143681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = HLYBadgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.HLYBadgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLYBadge;
+			};
+			name = Debug;
+		};
+		41E5B1331F060B7300143681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = HLYBadgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtspread.apps.HLYBadgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLYBadge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41E5B0F61F060B7300143681 /* Build configuration list for PBXProject "HLYBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E5B1291F060B7300143681 /* Debug */,
+				41E5B12A1F060B7300143681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E5B12B1F060B7300143681 /* Build configuration list for PBXNativeTarget "HLYBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E5B12C1F060B7300143681 /* Debug */,
+				41E5B12D1F060B7300143681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E5B12E1F060B7300143681 /* Build configuration list for PBXNativeTarget "HLYBadgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E5B12F1F060B7300143681 /* Debug */,
+				41E5B1301F060B7300143681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E5B1311F060B7300143681 /* Build configuration list for PBXNativeTarget "HLYBadgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E5B1321F060B7300143681 /* Debug */,
+				41E5B1331F060B7300143681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		41E5B10A1F060B7300143681 /* HLYBadge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				41E5B10B1F060B7300143681 /* HLYBadge.xcdatamodel */,
+			);
+			currentVersion = 41E5B10B1F060B7300143681 /* HLYBadge.xcdatamodel */;
+			path = HLYBadge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 41E5B0F31F060B7300143681 /* Project object */;
+}
