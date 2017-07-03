@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4178B5F41F063125004734AB /* UIView+AKABadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178B5F31F063125004734AB /* UIView+AKABadge.m */; };
+		411871441F0A242A00CBD0B4 /* UIView+AKABadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 411871411F0A242A00CBD0B4 /* UIView+AKABadge.m */; };
+		411871451F0A242A00CBD0B4 /* UIView+HLYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 411871431F0A242A00CBD0B4 /* UIView+HLYFrame.m */; };
 		4180A1DD1F062C0F00130A09 /* HLYExampleMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */; };
 		4180A1E11F062C2100130A09 /* HLYRedDotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */; };
-		4180A1E51F062D0000130A09 /* UIView+HLYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1E41F062D0000130A09 /* UIView+HLYFrame.m */; };
 		41E5B1001F060B7300143681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B0FF1F060B7300143681 /* main.m */; };
 		41E5B1031F060B7300143681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B1021F060B7300143681 /* AppDelegate.m */; };
 		41E5B1061F060B7300143681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B1051F060B7300143681 /* ViewController.m */; };
@@ -40,16 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4178B5F21F063125004734AB /* UIView+AKABadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKABadge.h"; sourceTree = "<group>"; };
-		4178B5F31F063125004734AB /* UIView+AKABadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKABadge.m"; sourceTree = "<group>"; };
+		4118713F1F0A242A00CBD0B4 /* AKABadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKABadgeProtocol.h; sourceTree = "<group>"; };
+		411871401F0A242A00CBD0B4 /* UIView+AKABadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AKABadge.h"; sourceTree = "<group>"; };
+		411871411F0A242A00CBD0B4 /* UIView+AKABadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKABadge.m"; sourceTree = "<group>"; };
+		411871421F0A242A00CBD0B4 /* UIView+HLYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HLYFrame.h"; sourceTree = "<group>"; };
+		411871431F0A242A00CBD0B4 /* UIView+HLYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HLYFrame.m"; sourceTree = "<group>"; };
 		4180A1DB1F062C0F00130A09 /* HLYExampleMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYExampleMgr.h; sourceTree = "<group>"; };
 		4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYExampleMgr.m; sourceTree = "<group>"; };
 		4180A1DF1F062C2100130A09 /* HLYRedDotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYRedDotViewController.h; sourceTree = "<group>"; };
 		4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYRedDotViewController.m; sourceTree = "<group>"; };
-		4180A1E31F062D0000130A09 /* UIView+HLYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HLYFrame.h"; sourceTree = "<group>"; };
-		4180A1E41F062D0000130A09 /* UIView+HLYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HLYFrame.m"; sourceTree = "<group>"; };
 		4180A1E71F062E1100130A09 /* AKABadgeImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKABadgeImport.h; sourceTree = "<group>"; };
-		4180A1EA1F062FB600130A09 /* AKABadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKABadgeProtocol.h; sourceTree = "<group>"; };
 		41E5B0FB1F060B7300143681 /* HLYBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLYBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E5B0FF1F060B7300143681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41E5B1011F060B7300143681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,14 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41700FAC1F061BBB0027E611 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				4180A1E21F062D0000130A09 /* Category */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		41700FB01F0622010027E611 /* examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,40 +121,17 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
-		4180A1E21F062D0000130A09 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				4180A1E31F062D0000130A09 /* UIView+HLYFrame.h */,
-				4180A1E41F062D0000130A09 /* UIView+HLYFrame.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		4180A1E61F062D6800130A09 /* AKABadge */ = {
 			isa = PBXGroup;
 			children = (
-				4180A1E91F062E6C00130A09 /* Protocol */,
-				4180A1E81F062E5000130A09 /* UIView */,
+				4118713F1F0A242A00CBD0B4 /* AKABadgeProtocol.h */,
+				411871401F0A242A00CBD0B4 /* UIView+AKABadge.h */,
+				411871411F0A242A00CBD0B4 /* UIView+AKABadge.m */,
+				411871421F0A242A00CBD0B4 /* UIView+HLYFrame.h */,
+				411871431F0A242A00CBD0B4 /* UIView+HLYFrame.m */,
 				4180A1E71F062E1100130A09 /* AKABadgeImport.h */,
 			);
 			path = AKABadge;
-			sourceTree = "<group>";
-		};
-		4180A1E81F062E5000130A09 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				4178B5F21F063125004734AB /* UIView+AKABadge.h */,
-				4178B5F31F063125004734AB /* UIView+AKABadge.m */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		4180A1E91F062E6C00130A09 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				4180A1EA1F062FB600130A09 /* AKABadgeProtocol.h */,
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		41E5B0F21F060B7300143681 = {
@@ -189,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				41700FB01F0622010027E611 /* examples */,
-				41700FAC1F061BBB0027E611 /* Tools */,
 				4180A1E61F062D6800130A09 /* AKABadge */,
 				41E5B10D1F060B7300143681 /* Assets.xcassets */,
 				41E5B1011F060B7300143681 /* AppDelegate.h */,
@@ -367,13 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4178B5F41F063125004734AB /* UIView+AKABadge.m in Sources */,
-				4180A1E51F062D0000130A09 /* UIView+HLYFrame.m in Sources */,
+				411871451F0A242A00CBD0B4 /* UIView+HLYFrame.m in Sources */,
 				41E5B1061F060B7300143681 /* ViewController.m in Sources */,
 				4180A1DD1F062C0F00130A09 /* HLYExampleMgr.m in Sources */,
 				4180A1E11F062C2100130A09 /* HLYRedDotViewController.m in Sources */,
 				41E5B10C1F060B7300143681 /* HLYBadge.xcdatamodeld in Sources */,
 				41E5B1031F060B7300143681 /* AppDelegate.m in Sources */,
+				411871441F0A242A00CBD0B4 /* UIView+AKABadge.m in Sources */,
 				41E5B1001F060B7300143681 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

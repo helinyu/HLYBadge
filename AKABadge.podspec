@@ -139,7 +139,7 @@
 
 Pod::Spec.new do |s|
 s.name         = 'AKABadge'
-s.version      = '0.0.5'
+s.version      = '0.0.6'
 s.summary      = 'badge 的提示红点'
 s.homepage     = 'https://github.com/helinyu/HLYBadge/tree/develop/HLYBadge/HLYBadge/AKABadge'
 s.license      = 'MIT'

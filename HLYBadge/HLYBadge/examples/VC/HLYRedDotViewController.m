@@ -33,9 +33,15 @@
     btn.frame = CGRectMake(100, 100, 100, 100);
     btn.backgroundColor = [UIColor greenColor];
 //    [btn aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleOutSideTopRight radius:10.f bgColor:[UIColor redColor] cornerRadius:0.f];
-    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleLeftBottom bgColor:nil text:@"新的" textColor:nil];
-//    [self.view drawArrowView];
     
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleLeftBottom bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStylebottomLeft bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleLeftTop bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleTopLeft bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleRightTop bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleTopRight bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleRightBottom bgColor:nil text:@"新的" textColor:nil];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleBottomRight bgColor:nil text:@"新的" textColor:nil];
 }
 
 - (void)toAction:(UIButton *)sender {

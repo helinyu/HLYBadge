@@ -247,8 +247,8 @@
     CGFloat y = quarterBadge.y;
     CGFloat width = quarterBadge.width;
     CGFloat height = quarterBadge.height;
-    CGFloat arrowHeight = height * (1 - 0.618);
-    CGFloat arrowWidth = height;
+    CGFloat shortEdge = height * (1 - 0.618);
+    CGFloat longEdge = height * 0.618;
     
     switch (arrowStyle) {
         case AKAQuarterBadgeArrowStyleLeftBottom:
@@ -257,8 +257,8 @@
             [quarterBadge.layer addSublayer:arrowLayer];
             UIBezierPath *linePath = [UIBezierPath bezierPath];
             [linePath moveToPoint:CGPointMake(0, height)];
-            [linePath addLineToPoint:CGPointMake(-arrowWidth, height)];
-            [linePath addLineToPoint:CGPointMake(0, height - arrowHeight)];
+            [linePath addLineToPoint:CGPointMake(-longEdge, height)];
+            [linePath addLineToPoint:CGPointMake(0, height - shortEdge)];
             arrowLayer.path = linePath.CGPath;
             arrowLayer.lineWidth = 0.f;
             arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
@@ -266,11 +266,116 @@
             arrowLayer.lineCap = kCALineCapButt;
         }
             break;
-            
+        case AKAQuarterBadgeArrowStylebottomLeft:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(0, height)];
+            [linePath addLineToPoint:CGPointMake(0, longEdge + height)];
+            [linePath addLineToPoint:CGPointMake(shortEdge,height)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
+        case AKAQuarterBadgeArrowStyleLeftTop:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(0, 0)];
+            [linePath addLineToPoint:CGPointMake(0, shortEdge)];
+            [linePath addLineToPoint:CGPointMake(-longEdge, 0)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
+        case AKAQuarterBadgeArrowStyleTopLeft:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(0,0)];
+            [linePath addLineToPoint:CGPointMake(shortEdge, 0)];
+            [linePath addLineToPoint:CGPointMake(0, -longEdge)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
+        case AKAQuarterBadgeArrowStyleRightTop:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(width,0)];
+            [linePath addLineToPoint:CGPointMake(longEdge+width,0)];
+            [linePath addLineToPoint:CGPointMake(width, shortEdge)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
+        case AKAQuarterBadgeArrowStyleTopRight:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(width, 0)];
+            [linePath addLineToPoint:CGPointMake(width, -longEdge)];
+            [linePath addLineToPoint:CGPointMake(width-shortEdge,0)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
+        case AKAQuarterBadgeArrowStyleRightBottom:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(width, height)];
+            [linePath addLineToPoint:CGPointMake(width+longEdge, height)];
+            [linePath addLineToPoint:CGPointMake(width, height-shortEdge)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
+        case AKAQuarterBadgeArrowStyleBottomRight:
+        {
+            CAShapeLayer *arrowLayer = [CAShapeLayer new];
+            [quarterBadge.layer addSublayer:arrowLayer];
+            UIBezierPath *linePath = [UIBezierPath bezierPath];
+            [linePath moveToPoint:CGPointMake(width, height)];
+            [linePath addLineToPoint:CGPointMake(width, height+longEdge)];
+            [linePath addLineToPoint:CGPointMake(width-shortEdge,height)];
+            arrowLayer.path = linePath.CGPath;
+            arrowLayer.lineWidth = 0.f;
+            arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.lineCap = kCALineCapButt;
+        }
+            break;
         default:
             break;
     }
 }
+
 
 
 @end
