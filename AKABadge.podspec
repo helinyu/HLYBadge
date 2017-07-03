@@ -139,13 +139,13 @@
 
 Pod::Spec.new do |s|
 s.name         = 'AKABadge'
-s.version      = '0.0.6'
+s.version      = '0.0.7'
 s.summary      = 'badge 的提示红点'
-s.homepage     = 'https://github.com/helinyu/HLYBadge/tree/develop/HLYBadge/HLYBadge/AKABadge'
+s.homepage     = 'https://github.com/helinyu/HLYBadge/AKABadge'
 s.license      = 'MIT'
 s.authors      = { "felix" => "2319979647@qq.com" }
 s.platform     = :ios, '7.0'
 s.source       = {:git => 'https://github.com/helinyu/HLYBadge.git', :tag => s.version}
-s.source_files = 'HLYBadge/HLYBadge/AKABadge/**/*'
+s.source_files = 'AKABadge/*'
 s.requires_arc = true
 end
