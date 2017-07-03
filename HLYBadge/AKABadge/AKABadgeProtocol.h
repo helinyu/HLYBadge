@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#define AKABadgeDefautBgColor [UIColor colorWithRed:255.0/255.f green:88.f/255.f blue:81.f/255.f alpha:0.8]
+#define AKABadgeDefautBgColor [UIColor colorWithRed:255.0/255.f green:88.f/255.f blue:81.f/255.f alpha:1.f]
 #define AKABadgeDefautTextColor [UIColor whiteColor]
 
+static const CGFloat quarterBadgeDefaultRadius = 5.f;
 
 static const double quartRootOf2 = 1.4142135623731;
 

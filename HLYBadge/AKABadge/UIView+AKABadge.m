@@ -1,4 +1,4 @@
-//
+
 //  UIView+AKABadge.m
 //  HLYBadge
 //
@@ -8,6 +8,7 @@
 
 #import "UIView+AKABadge.h"
 #import "UIView+HLYFrame.h"
+#import "AKALabel.h"
 #import <objc/runtime.h>
 
 @implementation UIView (AKABadge)
@@ -60,7 +61,6 @@
         cornerRadius = radius;
     }
     badge.layer.cornerRadius = cornerRadius;
-    
     badge.layer.masksToBounds = YES;
     
     [self addSubview:badge];
@@ -73,9 +73,9 @@
     if (!self.badgeCache) {
         self.badgeCache = [NSCache new];
     }
-    UILabel *badge = (UILabel *)[self.badgeCache objectForKey:@(AKABadgeStyleRedDot)];
+    AKALabel *badge = (AKALabel *)[self.badgeCache objectForKey:@(AKABadgeStyleRedDot)];
     if (!badge) {
-        badge = [UILabel new];
+        badge = [AKALabel new];
     }
     badge.text = @"";
     
@@ -208,17 +208,17 @@
                                       text:(NSString *)text
                                  textColor:(UIColor *)textColor {
     BOOL needCache = NO;
-    UILabel *quarterBage ;
+    AKALabel *quarterBage ;
     if (self.badgeCache) {
-        quarterBage = (UILabel *)[self.badgeCache objectForKey:@(AKABadgeStyleQuarterText)];
+        quarterBage = (AKALabel *)[self.badgeCache objectForKey:@(AKABadgeStyleQuarterText)];
     }else{
         self.badgeCache = [NSCache new];
-        quarterBage = [UILabel new];
+        quarterBage = [AKALabel new];
         needCache = YES;
     }
-    
     quarterBage.text = text;
     [quarterBage sizeToFit];
+    quarterBage.insetsPadding = UIEdgeInsetsMake(0, 5, 0, 0);
     CGRect frame = quarterBage.frame;
     frame.origin = origin;
     quarterBage.frame = frame;
@@ -232,6 +232,10 @@
         textColor = AKABadgeDefautTextColor;
     }
     quarterBage.textColor = textColor;
+    quarterBage.layer.cornerRadius = quarterBadgeDefaultRadius;
+    quarterBage.layer.masksToBounds = YES;
+    quarterBage.layer.borderWidth = 0.f;
+
     [self addSubview:quarterBage];
     
     if (needCache && quarterBage) {
@@ -243,8 +247,8 @@
 }
 
 - (void)configureArrow:(UILabel *)quarterBadge arrowStyle:(AKAQuarterBadgeArrowStyle)arrowStyle{
-//    CGFloat x = quarterBadge.x;
-//    CGFloat y = quarterBadge.y;
+    CGFloat x = quarterBadge.x;
+    CGFloat y = quarterBadge.y;
     CGFloat width = quarterBadge.width;
     CGFloat height = quarterBadge.height;
     CGFloat shortEdge = height * (1 - 0.618);
@@ -254,15 +258,15 @@
         case AKAQuarterBadgeArrowStyleLeftBottom:
         {
             CAShapeLayer *arrowLayer = [CAShapeLayer new];
-            [quarterBadge.layer addSublayer:arrowLayer];
+            [self.layer addSublayer:arrowLayer];
             UIBezierPath *linePath = [UIBezierPath bezierPath];
-            [linePath moveToPoint:CGPointMake(0, height)];
-            [linePath addLineToPoint:CGPointMake(-longEdge, height)];
-            [linePath addLineToPoint:CGPointMake(0, height - shortEdge)];
+            [linePath moveToPoint:CGPointMake(self.width+defaultRedotRadius, height+self.height)];
+            [linePath addLineToPoint:CGPointMake(-longEdge+self.width, height + self.height)];
+            [linePath addLineToPoint:CGPointMake(self.width, self.height+height - shortEdge)];
             arrowLayer.path = linePath.CGPath;
             arrowLayer.lineWidth = 0.f;
             arrowLayer.fillColor = AKABadgeDefautBgColor.CGColor;
-            arrowLayer.strokeColor = AKABadgeDefautBgColor.CGColor;
+            arrowLayer.strokeColor = [UIColor clearColor].CGColor;
             arrowLayer.lineCap = kCALineCapButt;
         }
             break;

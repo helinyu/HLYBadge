@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4118715F1F0A2CB100CBD0B4 /* UIView+AKABadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4118715C1F0A2CB100CBD0B4 /* UIView+AKABadge.m */; };
 		411871601F0A2CB100CBD0B4 /* UIView+HLYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4118715E1F0A2CB100CBD0B4 /* UIView+HLYFrame.m */; };
+		411871671F0A417300CBD0B4 /* AKALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411871661F0A417300CBD0B4 /* AKALabel.m */; };
 		4180A1DD1F062C0F00130A09 /* HLYExampleMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */; };
 		4180A1E11F062C2100130A09 /* HLYRedDotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */; };
 		41E5B1001F060B7300143681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5B0FF1F060B7300143681 /* main.m */; };
@@ -46,6 +47,8 @@
 		4118715C1F0A2CB100CBD0B4 /* UIView+AKABadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AKABadge.m"; sourceTree = "<group>"; };
 		4118715D1F0A2CB100CBD0B4 /* UIView+HLYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HLYFrame.h"; sourceTree = "<group>"; };
 		4118715E1F0A2CB100CBD0B4 /* UIView+HLYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HLYFrame.m"; sourceTree = "<group>"; };
+		411871651F0A417300CBD0B4 /* AKALabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKALabel.h; sourceTree = "<group>"; };
+		411871661F0A417300CBD0B4 /* AKALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKALabel.m; sourceTree = "<group>"; };
 		4180A1DB1F062C0F00130A09 /* HLYExampleMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYExampleMgr.h; sourceTree = "<group>"; };
 		4180A1DC1F062C0F00130A09 /* HLYExampleMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYExampleMgr.m; sourceTree = "<group>"; };
 		4180A1DF1F062C2100130A09 /* HLYRedDotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYRedDotViewController.h; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 		411871581F0A2CB100CBD0B4 /* AKABadge */ = {
 			isa = PBXGroup;
 			children = (
+				411871611F0A413F00CBD0B4 /* subclass */,
 				411871591F0A2CB100CBD0B4 /* AKABadgeImport.h */,
 				4118715A1F0A2CB100CBD0B4 /* AKABadgeProtocol.h */,
 				4118715B1F0A2CB100CBD0B4 /* UIView+AKABadge.h */,
@@ -106,6 +110,15 @@
 			);
 			path = AKABadge;
 			sourceTree = SOURCE_ROOT;
+		};
+		411871611F0A413F00CBD0B4 /* subclass */ = {
+			isa = PBXGroup;
+			children = (
+				411871651F0A417300CBD0B4 /* AKALabel.h */,
+				411871661F0A417300CBD0B4 /* AKALabel.m */,
+			);
+			name = subclass;
+			sourceTree = "<group>";
 		};
 		41700FB01F0622010027E611 /* examples */ = {
 			isa = PBXGroup;
@@ -338,6 +351,7 @@
 				411871601F0A2CB100CBD0B4 /* UIView+HLYFrame.m in Sources */,
 				41E5B1061F060B7300143681 /* ViewController.m in Sources */,
 				4180A1DD1F062C0F00130A09 /* HLYExampleMgr.m in Sources */,
+				411871671F0A417300CBD0B4 /* AKALabel.m in Sources */,
 				4180A1E11F062C2100130A09 /* HLYRedDotViewController.m in Sources */,
 				41E5B10C1F060B7300143681 /* HLYBadge.xcdatamodeld in Sources */,
 				41E5B1031F060B7300143681 /* AppDelegate.m in Sources */,
