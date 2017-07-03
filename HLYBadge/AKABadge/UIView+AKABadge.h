@@ -65,6 +65,4 @@
                                       text:(NSString *)text
                                  textColor:(UIColor *)textColo;
 
-- (void)drawArrowView;
-
 @end
