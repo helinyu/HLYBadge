@@ -51,4 +51,20 @@
                              cornerRadius:(CGFloat)cornerRadius;
 
 
+#pragma mark -- quarter corner
+
+// (2) quarter badge
+
+@property (nonatomic, strong) UILabel *quarterBadge; // recommen not no to set manually
+
+@property (nonatomic, strong) UIView *quarterArrow;  // Arrow for direction
+
+- (void)aka_showTextQuarterBadgeWithOrigin:(CGPoint)origin
+                    quarterBadgeArrowStyle:(AKAQuarterBadgeArrowStyle)arrowStyle
+                                   bgColor:(UIColor *)color
+                                      text:(NSString *)text
+                                 textColor:(UIColor *)textColo;
+
+- (void)drawArrowView;
+
 @end

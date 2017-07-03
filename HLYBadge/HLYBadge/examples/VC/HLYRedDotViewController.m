@@ -25,17 +25,16 @@
 //    NSLog(@"max x :%f",CGRectGetMaxX(self.view.frame));
 //    NSLog(@"mid x :%f",CGRectGetMidX(self.view.frame));
 //    [self.view aka_showRedDotBadgeWithCenter:CGPointMake(100, 100)];
-    
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:@"点击" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(toAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(100, 100, 100, 100);
     btn.backgroundColor = [UIColor greenColor];
-    [btn aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleOutSideTopRight radius:10.f bgColor:[UIColor redColor] cornerRadius:0.f];
-    
-    
-    
+//    [btn aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleOutSideTopRight radius:10.f bgColor:[UIColor redColor] cornerRadius:0.f];
+    [btn aka_showTextQuarterBadgeWithOrigin:CGPointMake(100, 100) quarterBadgeArrowStyle:AKAQuarterBadgeArrowStyleLeftBottom bgColor:nil text:@"新的" textColor:nil];
+//    [self.view drawArrowView];
     
 }
 
