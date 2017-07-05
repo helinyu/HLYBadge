@@ -100,13 +100,12 @@
 		411871581F0A2CB100CBD0B4 /* AKABadge */ = {
 			isa = PBXGroup;
 			children = (
+				41EEC02D1F0A790200DA02E0 /* UIView+categories */,
 				411871611F0A413F00CBD0B4 /* subclass */,
 				411871591F0A2CB100CBD0B4 /* AKABadgeImport.h */,
 				4118715A1F0A2CB100CBD0B4 /* AKABadgeProtocol.h */,
 				4118715B1F0A2CB100CBD0B4 /* UIView+AKABadge.h */,
 				4118715C1F0A2CB100CBD0B4 /* UIView+AKABadge.m */,
-				4118715D1F0A2CB100CBD0B4 /* UIView+HLYFrame.h */,
-				4118715E1F0A2CB100CBD0B4 /* UIView+HLYFrame.m */,
 			);
 			path = AKABadge;
 			sourceTree = SOURCE_ROOT;
@@ -210,6 +209,15 @@
 				41E5B1281F060B7300143681 /* Info.plist */,
 			);
 			path = HLYBadgeUITests;
+			sourceTree = "<group>";
+		};
+		41EEC02D1F0A790200DA02E0 /* UIView+categories */ = {
+			isa = PBXGroup;
+			children = (
+				4118715D1F0A2CB100CBD0B4 /* UIView+HLYFrame.h */,
+				4118715E1F0A2CB100CBD0B4 /* UIView+HLYFrame.m */,
+			);
+			name = "UIView+categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

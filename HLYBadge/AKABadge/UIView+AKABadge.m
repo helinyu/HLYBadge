@@ -216,9 +216,10 @@
         quarterBage = [AKALabel new];
         needCache = YES;
     }
+    
     quarterBage.text = text;
     [quarterBage sizeToFit];
-//    quarterBage.insetsPadding = UIEdgeInsetsMake(0, 5, 0, 0);
+    quarterBage.insetsPadding = UIEdgeInsetsMake(0, 5, 0, 0);
     CGRect frame = quarterBage.frame;
     frame.origin = origin;
     quarterBage.frame = frame;
