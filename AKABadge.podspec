@@ -141,7 +141,7 @@ Pod::Spec.new do |s|
 s.name         = 'AKABadge'
 s.version      = '0.1.5'
 s.summary      = 'badge 的提示红点'
-s.homepage     = 'https://github.com/helinyu/HLYBadge/AKABadge'
+s.homepage     = 'https://github.com/helinyu/HLYBadge'
 s.license      = 'MIT'
 s.authors      = { "felix" => "2319979647@qq.com" }
 s.platform     = :ios, '7.0'
