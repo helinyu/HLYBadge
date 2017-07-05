@@ -148,4 +148,7 @@ s.platform     = :ios, '7.0'
 s.source       = {:git => 'https://github.com/helinyu/HLYBadge.git', :tag => s.version}
 s.source_files = 'HLYBadge/AKABadge/**/*'
 s.requires_arc = true
+s.description  = <<-DESC
+            	  akabadge is for easier to use
+               DESC
 end
