@@ -44,11 +44,16 @@
                                radius:(CGFloat)radius
                               bgColor:(UIColor *)color;
 
-
+/*
+ * another method for display center style for red dot
+ */
 - (void)aka_showRedDotBadgeWithCenterType:(AKABadgeCenterStyle)centerType
                                    radius:(CGFloat)radius
                                   bgColor:(UIColor *)color
                              cornerRadius:(CGFloat)cornerRadius;
+
+- (void)hideBadge;
+- (void)showBadgePrePare;
 
 
 #pragma mark -- quarter corner

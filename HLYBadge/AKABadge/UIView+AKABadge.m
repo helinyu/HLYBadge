@@ -45,12 +45,12 @@
     }
     badge.text = @"";
     
-    badge.center = center;
-    
     if (radius <= 0.f) {
         radius = 4.f;
     }
     badge.size = CGSizeMake(radius *2, radius *2);
+    badge.center = center;
+    [self addSubview:badge];
     
     if (!color) {
         color = AKABadgeDefautBgColor;
@@ -63,8 +63,10 @@
     badge.layer.cornerRadius = cornerRadius;
     badge.layer.masksToBounds = YES;
     
-    [self addSubview:badge];
 }
+
+
+#pragma mark -- quarter red dot
 
 - (void)aka_showRedDotBadgeWithCenterType:(AKABadgeCenterStyle)centerType
                                radius:(CGFloat)radius
@@ -145,6 +147,18 @@
     badge.layer.masksToBounds = YES;
     
     [self addSubview:badge];
+}
+
+- (void)hideBadge {
+    if (self.roundBadge) {
+        self.roundBadge.hidden = YES;
+    }
+}
+
+- (void)showBadgePrePare {
+    if (self.roundBadge) {
+        self.roundBadge.hidden = NO;
+    }
 }
 
 

@@ -61,7 +61,7 @@
 		41E5B1051F060B7300143681 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		41E5B1081F060B7300143681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41E5B10B1F060B7300143681 /* HLYBadge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HLYBadge.xcdatamodel; sourceTree = "<group>"; };
-		41E5B10D1F060B7300143681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E5B10D1F060B7300143681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		41E5B1101F060B7300143681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E5B1121F060B7300143681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E5B1171F060B7300143681 /* HLYBadgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLYBadgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +140,7 @@
 		4180A1DE1F062C2100130A09 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				41E5B10D1F060B7300143681 /* Assets.xcassets */,
 				4180A1DF1F062C2100130A09 /* HLYRedDotViewController.h */,
 				4180A1E01F062C2100130A09 /* HLYRedDotViewController.m */,
 			);
@@ -171,7 +172,6 @@
 			children = (
 				411871581F0A2CB100CBD0B4 /* AKABadge */,
 				41700FB01F0622010027E611 /* examples */,
-				41E5B10D1F060B7300143681 /* Assets.xcassets */,
 				41E5B1011F060B7300143681 /* AppDelegate.h */,
 				41E5B1021F060B7300143681 /* AppDelegate.m */,
 				41E5B1041F060B7300143681 /* ViewController.h */,
