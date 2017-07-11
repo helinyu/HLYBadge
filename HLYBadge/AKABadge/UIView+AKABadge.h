@@ -17,7 +17,7 @@
 
 @property (nonatomic, assign) CGFloat roundCornerRadius; // set the round badge corner radius
 
-@property (nonatomic, strong) NSCache *badgeCache;  // cache the badge
+//@property (nonatomic, strong) NSCache *badgeCache;  // cache the badge
 
 
 

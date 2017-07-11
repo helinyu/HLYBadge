@@ -36,33 +36,19 @@
                                radius:(CGFloat)radius
                               bgColor:(UIColor *)color
                          cornerRadius:(CGFloat)cornerRadius {
-    if (!self.badgeCache) {
-        self.badgeCache = [NSCache new];
+    if (self.roundBadge == nil) {
+        self.roundBadge = [UILabel new];
+        self.roundBadge.text = @"";
+        [self addSubview:self.roundBadge];
     }
-    UILabel *badge = (UILabel *)[self.badgeCache objectForKey:@(AKABadgeStyleRedDot)];
-    if (!badge) {
-        badge = [UILabel new];
-    }
-    badge.text = @"";
-    
-    if (radius <= 0.f) {
-        radius = 4.f;
-    }
-    badge.size = CGSizeMake(radius *2, radius *2);
-    badge.center = center;
-    [self addSubview:badge];
-    
-    if (!color) {
-        color = AKABadgeDefautBgColor;
-    }
-    badge.backgroundColor = color;
-    
-    if (cornerRadius <= 0) {
-        cornerRadius = radius;
-    }
-    badge.layer.cornerRadius = cornerRadius;
-    badge.layer.masksToBounds = YES;
-    
+    self.roundBadge.text = @"";
+    (radius > 0)?(radius = radius):(radius = 4.f);
+    self.roundBadge.size = CGSizeMake(radius *2, radius *2);
+    self.roundBadge.center = center;
+    color?(self.roundBadge.backgroundColor = color):(self.roundBadge.backgroundColor = AKABadgeDefautBgColor);
+    (cornerRadius >0)?(cornerRadius = cornerRadius):(cornerRadius = radius);
+    self.roundBadge.layer.cornerRadius = cornerRadius;
+    self.roundBadge.layer.masksToBounds = YES;
 }
 
 
@@ -103,9 +89,6 @@
         case AKABadgeCenterStyleOutSideRightTopCenter:
             badge.center = CGPointMake(CGRectGetMaxX(self.bounds)+sqrt2(radius), CGRectGetMinY(self.bounds) - sqrt2(radius));
             break;
-//        case AKABadgeCenterStyleOutSideRightTop:
-//            badge.center = CGPointMake(CGRectGetMaxX(self.bounds)+sqrt2(radius), CGRectGetMinY(self.bounds)+sqrt2(radius));
-//            break;
         case AKABadgeCenterStyleOutSideTopRight:
             badge.center = CGPointMake(CGRectGetMaxX(self.bounds)+sqrt2(radius), CGRectGetMinY(self.bounds) - sqrt2(radius));
             break;

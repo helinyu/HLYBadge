@@ -32,7 +32,7 @@ static const CGFloat kCellHeaderViewH = 44.f;
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.title = @"red dot";
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64.f, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64.f, ScreenWidth, ScreenHeight-64.f) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     self.automaticallyAdjustsScrollViewInsets = NO;
     _tableView.backgroundColor = [UIColor yellowColor];
@@ -89,7 +89,6 @@ static const CGFloat kCellHeaderViewH = 44.f;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNomalCellIdentifier forIndexPath:indexPath];
-    [cell.contentView hideBadge];
     switch (indexPath.section) {
         case 0:
         {
@@ -108,13 +107,64 @@ static const CGFloat kCellHeaderViewH = 44.f;
                 case 3:
                     [cell.contentView aka_showRedDotBadgeWithCenter:cell.contentView.center radius:8.f bgColor:[UIColor purpleColor] cornerRadius:6.f];
                     break;
-                default:
+                       default:
                     break;
             }
             break;
         }
         case 1:
+        {
             cell.textLabel.text = _sources[indexPath.section][indexPath.row];
+            switch (indexPath.row) {
+                case 0:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 1:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 2:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 3:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 4:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 5:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 6:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 7:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 8:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 9:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 10:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 11:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 12:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 13:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                case 14:
+                    [cell.contentView aka_showRedDotBadgeWithCenterType:AKABadgeCenterStyleRightTopCenter radius:6 bgColor:[UIColor redColor] cornerRadius:6];
+                    break;
+                default:
+                    break;
+            }
+        }
             break;
         default:
             break;
